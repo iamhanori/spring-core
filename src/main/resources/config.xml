@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 설정 -->
+    <context:component-scan base-package="kr.hs.study.beans"/>
+
+<!--    xml-->
+<!--    <bean id="xdog" class="kr.hs.study.beans.Dog"/>-->
+<!--    <bean id="xcat" class="kr.hs.study.beans.Cat"/>-->
+<!--    <bean id="xrabbit" class="kr.hs.study.beans.Rabbit"/>-->
+<!--    <bean id="xtaxi" class="kr.hs.study.beans.Taxi"/>-->
+<!--    <bean id="xbus" class="kr.hs.study.beans.Bus"/>-->
+
+<!--    constructor-->
+<!--    <bean id="cdog" class="kr.hs.study.beans.Dog">-->
+<!--        <constructor-arg value="우다다다"/>-->
+<!--        <constructor-arg value="와구와구"/>-->
+<!--        <constructor-arg value="멍멍"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="ccat" class="kr.hs.study.beans.Cat">-->
+<!--        <constructor-arg value="도도도도"/>-->
+<!--        <constructor-arg value="챱챱"/>-->
+<!--        <constructor-arg value="야옹"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="crabbit" class="kr.hs.study.beans.Rabbit">-->
+<!--        <constructor-arg value="깡총"/>-->
+<!--        <constructor-arg value="냠냠"/>-->
+<!--        <constructor-arg value="..."/>-->
+<!--    </bean>-->
+
+    <bean id="ctaxi" class="kr.hs.study.beans.Taxi">
+        <constructor-arg value="삑- (미터기 찍는 소리)"/>
+        <constructor-arg value="안녕히..~"/>
+    </bean>
+
+    <bean id="cbus" class="kr.hs.study.beans.Bus">
+        <constructor-arg value="삐- (문 열리는 소리)"/>
+        <constructor-arg value="삐빅 (카드 찍는 소리)"/>
+    </bean>
+
+</beans>
